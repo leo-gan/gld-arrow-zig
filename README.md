@@ -55,7 +55,7 @@ sparse tensors. `src/lz4.zig` and `src/zstd.zig` are the compressors.
 `src/flight.zig` is the in-memory Flight exchange. `src/schema_load.zig` and
 `src/codegen.zig` turn a schema into Zig.
 
-Version `0.1.0` lives in `build.zig.zon` and `src/version.zig`.
+Version `0.2.0` lives in `build.zig.zon` and `src/version.zig`.
 
 ## License
 

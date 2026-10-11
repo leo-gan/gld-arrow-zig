@@ -62,6 +62,6 @@ test {
     _ = @import("roundtrip_test.zig");
 }
 
-test "version is 0.1.0" {
-    try std.testing.expectEqualStrings("0.1.0", version);
+test "version is 0.2.0" {
+    try std.testing.expectEqualStrings("0.2.0", version);
 }

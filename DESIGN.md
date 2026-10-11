@@ -5,7 +5,7 @@
 | **Document title** | Apache Arrow serializer for Zig |
 | **Author** | Leonid Ganeline |
 | **Date** | 2026-10-11 |
-| **Status** | Implemented (0.1.0) |
+| **Status** | Implemented (0.2.0) |
 | **Module** | `arrow` |
 | **CLI** | `gld-arrowgen-zig` |
 | **License** | MIT, Copyright (c) 2026 Leonid Ganeline |

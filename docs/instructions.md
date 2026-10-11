@@ -1,7 +1,7 @@
 # Instructions
 
 These steps assume a Linux machine and Zig 0.16.0. The module name is `arrow`.
-The package version in `build.zig.zon` and `src/version.zig` starts at `0.1.0`.
+The package version in `build.zig.zon` and `src/version.zig` is `0.2.0`.
 
 ## Build this repository
 
