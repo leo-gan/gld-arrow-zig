@@ -3,6 +3,33 @@
 These steps assume a Linux machine and Zig 0.16.0. The module name is `arrow`.
 The package version in `build.zig.zon` and `src/version.zig` is `0.2.0`.
 
+## Install
+
+Zig 0.16 fetches this package by URL and content hash. The package key is `gld_arrow_zig`. The module name is `arrow`.
+
+```zig
+.dependencies = .{
+    .gld_arrow_zig = .{
+        .url = "https://github.com/leo-gan/gld-arrow-zig/archive/refs/tags/0.2.0.tar.gz",
+        .hash = "gld_arrow_zig-0.2.0-9moWMHGMAwD1Yaukj6dXUXAo3I7qNS75mLPTTMvfO162",
+    },
+},
+```
+
+```zig
+const arrow_dep = b.dependency("gld_arrow_zig", .{
+    .target = target,
+    .optimize = optimize,
+});
+const arrow = arrow_dep.module("arrow");
+```
+
+This records the same dependency:
+
+```bash
+zig fetch --save=gld_arrow_zig https://github.com/leo-gan/gld-arrow-zig/archive/refs/tags/0.2.0.tar.gz
+```
+
 ## Build this repository
 
 ```bash

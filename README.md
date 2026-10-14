@@ -30,13 +30,11 @@ zig build
 
 ## Depend on a release
 
-Zig fetches the git tag. The hash is on the GitHub Release. Registration is the `zig-package` topic, described in [docs/publishing.md](docs/publishing.md).
-
 ```zig
 .dependencies = .{
     .gld_arrow_zig = .{
         .url = "https://github.com/leo-gan/gld-arrow-zig/archive/refs/tags/0.2.0.tar.gz",
-        .hash = "<hash from the 0.2.0 release>",
+        .hash = "gld_arrow_zig-0.2.0-9moWMHGMAwD1Yaukj6dXUXAo3I7qNS75mLPTTMvfO162",
     },
 },
 ```
