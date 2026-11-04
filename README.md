@@ -1,5 +1,7 @@
 # gld-arrow-zig
 
+[Serialization](https://leo-gan.github.io/serialization/) is the hub for the theory, the history, and the benchmarks.
+
 A from-scratch [Apache Arrow](https://arrow.apache.org/docs/format/Columnar.html)
 library for [Zig](https://ziglang.org/) 0.16. The import is `arrow`. The code
 generator is `gld-arrowgen-zig`.
