@@ -19,6 +19,10 @@ pub const decodeFile = @import("ipc.zig").decodeFile;
 pub const readFooter = @import("ipc.zig").readFooter;
 pub const FooterInfo = @import("ipc.zig").FooterInfo;
 
+pub const PlanPiece = @import("stream_plan.zig").PlanPiece;
+pub const StreamPlan = @import("stream_plan.zig").StreamPlan;
+pub const buildStreamPlan = @import("stream_plan.zig").buildStreamPlan;
+
 pub const encodeTensorStream = @import("tensor.zig").encodeTensorStream;
 pub const readTensor = @import("tensor.zig").readTensor;
 
@@ -55,6 +59,7 @@ test {
     _ = @import("zstd.zig");
     _ = @import("xxh.zig");
     _ = @import("ipc.zig");
+    _ = @import("stream_plan.zig");
     _ = @import("tensor.zig");
     _ = @import("flight.zig");
     _ = @import("schema_load.zig");
